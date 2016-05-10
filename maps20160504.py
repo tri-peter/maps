@@ -68,7 +68,7 @@ def logistic_map(r):
 def henon_map(a):
 	"""function for iterating and plotting the henon map"""
 
-	xtemp = golbal_xtemp
+	xtemp = global_xtemp
 	ytemp = global_ytemp
 
 	x = [xtemp]
@@ -95,7 +95,7 @@ def henon_map(a):
 def logistic_worker(r):
 	"""worker function for calculating the tragectories of the logistic map"""
 
-	xtemp = golbal_xtemp
+	xtemp = global_xtemp
 
 	x = [xtemp]
 
@@ -111,7 +111,7 @@ def logistic_function(r, x):
 def henon_worker(a):
 	"""worker function for calculating the tragectories of the henon map"""
 
-	xtemp = golbal_xtemp
+	xtemp = global_xtemp
 	ytemp = global_ytemp
 
 	x = [xtemp]
