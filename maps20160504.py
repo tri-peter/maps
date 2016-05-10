@@ -38,10 +38,13 @@ import numpy as np
 import os
 import sys
 
+global_xtemp = 0.3
+global_ytemp = 0.3
+
 def logistic_map(r):
 	"""function for iterating and plotting the logistic map"""
 
-	xtemp = 0.3
+	xtemp = global_xtemp
 
 	x = [xtemp]
 
@@ -65,8 +68,8 @@ def logistic_map(r):
 def henon_map(a):
 	"""function for iterating and plotting the henon map"""
 
-	xtemp = 0.3
-	ytemp = 0.3
+	xtemp = golbal_xtemp
+	ytemp = global_ytemp
 
 	x = [xtemp]
 	y = [ytemp]
@@ -92,7 +95,7 @@ def henon_map(a):
 def logistic_worker(r):
 	"""worker function for calculating the tragectories of the logistic map"""
 
-	xtemp = 0.3
+	xtemp = golbal_xtemp
 
 	x = [xtemp]
 
@@ -108,8 +111,8 @@ def logistic_function(r, x):
 def henon_worker(a):
 	"""worker function for calculating the tragectories of the henon map"""
 
-	xtemp = 0.3
-	ytemp = 0.3
+	xtemp = golbal_xtemp
+	ytemp = global_ytemp
 
 	x = [xtemp]
 	y = [ytemp]
