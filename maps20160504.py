@@ -185,7 +185,8 @@ if __name__ == '__main__':
 #				print("The constant 'a' must be greater or equal to 1 and less than or equal to 1.4")
 
 	if args.bifurcation:
-		if args.logistic:	
+		print("Running...")
+		if args.logistic:
 			with mp.Pool(processes=mp.cpu_count()) as pool:
 				T = pool.map(logistic_worker, np.arange(a, b, c))
 
